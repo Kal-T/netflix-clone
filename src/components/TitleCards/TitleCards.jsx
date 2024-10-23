@@ -12,7 +12,7 @@ const TitleCards = ({title, category}) => {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlZWNkMTJlNTBiMGE1MTQ0NjQ0NTQwZTViMDE5NjY3MiIsIm5iZiI6MTcyOTY1Mjk0MC40NzQxMjUsInN1YiI6IjY3MTg2M2U2NWQwZGU4OTA0MmQ4YTI1OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.rbWP6-lpClDZ0aPYW3ehtOJEfIjfhp7esipUOkCh-4M'
+      Authorization: 'Bearer ' + process.env.BEARER_TOKEN
     }
   };
 
